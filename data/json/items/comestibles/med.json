@@ -888,29 +888,6 @@
     "use_action": "SLEEP"
   },
   {
-    "id": "poppy_pain",
-    "type": "COMESTIBLE",
-    "comestible_type": "MED",
-    "name": "poppy painkiller",
-    "description": "Potent opioid palliative produced by the refining of the mutated poppy.  Notably devoid of euphoric or sedative effects, as an opiate it may still be addictive.",
-    "weight": "1 g",
-    "volume": "250 ml",
-    "price": 3000,
-    "charges": 10,
-    "stack_size": 100,
-    "material": "powder",
-    "symbol": "!",
-    "color": "pink",
-    "healthy": -2,
-    "addiction_potential": 10,
-    "addiction_type": "opiate",
-    "use_action": {
-      "type": "consume_drug",
-      "activation_message": "You take some poppy painkiller.",
-      "effects": [ { "id": "pkill2", "duration": 1080 } ]
-    }
-  },
-  {
     "id": "poppy_sleep",
     "type": "COMESTIBLE",
     "comestible_type": "MED",
