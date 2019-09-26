@@ -1003,10 +1003,13 @@ void npc::form_opinion( const player &u )
         op_of_u.fear += 6;
     }
 
+    // TODO: Opinions for being naked; humans are weird
     int u_ugly = 0;
     for( trait_id &mut : u.get_mutations() ) {
         u_ugly += mut.obj().ugliness;
     }
+    // Hey, ugliness ain't all about the body
+    u_ugly += u.get_clothes_ugliness;
     op_of_u.fear += u_ugly / 2;
     op_of_u.trust -= u_ugly / 3;
 

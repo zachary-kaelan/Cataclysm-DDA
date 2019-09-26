@@ -6450,7 +6450,7 @@ void player::update_body_wetness( const w_point &weather )
 // Get total worn ugliness bonus
 int player::get_clothes_ugliness() const
 {
-    return roll_remainder(sqrt(morale->get_total_fancy_points()));
+    return -roll_remainder(sqrt(morale->get_total_fancy_points()));
     // TODO: Take filthiness into account
 }
 
