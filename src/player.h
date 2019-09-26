@@ -1253,6 +1253,8 @@ class player : public Character
         void cancel_activity();
         void resume_backlog_activity();
 
+        /** Uses factors like fanciness to get an ugliness value for clothing. */
+        int get_clothes_ugliness() const;
         int get_morale_level() const; // Modified by traits, &c
         void add_morale( const morale_type &type, int bonus, int max_bonus = 0,
                          const time_duration &duration = 1_hours,
