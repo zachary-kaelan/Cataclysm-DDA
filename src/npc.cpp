@@ -105,6 +105,7 @@ const efftype_id effect_controlled( "controlled" );
 static const trait_id trait_CANNIBAL( "CANNIBAL" );
 static const trait_id trait_PSYCHOPATH( "PSYCHOPATH" );
 static const trait_id trait_SAPIOVORE( "SAPIOVORE" );
+static const trait_id trait_STYLISH( "STYLISH" );
 static const trait_id trait_TERRIFYING( "TERRIFYING" );
 
 void starting_clothes( npc &who, const npc_class_id &type, bool male );
@@ -1008,8 +1009,8 @@ void npc::form_opinion( const player &u )
     for( trait_id &mut : u.get_mutations() ) {
         u_ugly += mut.obj().ugliness;
     }
-    // Hey, ugliness ain't all about the body
-    u_ugly += u.get_clothes_ugliness;
+    if ( has_trait( trait_STYLISH ) )
+        u_ugly += u.get_clothes_ugliness();
     op_of_u.fear += u_ugly / 2;
     op_of_u.trust -= u_ugly / 3;
 
