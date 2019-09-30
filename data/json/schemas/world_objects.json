@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "world_objects", 
+  "allOf": [
+    { "$ref": "base.json#" },
+    {
+      "properties": {
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "symbol": { "type": "string", "minLength": 1, "maxLength": 1 },
+        "color": {
+          "$ref": "prop_enums.json#/definitions/color"
+        },
+        "flags": { 
+          "type": "array",
+          "items": {
+            "$ref": "prop_enums.json#/definitions/flags"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "name",
+        "description",
+        "symbol",
+        "color"
+      ]
+    }
+  ]
+  
+}

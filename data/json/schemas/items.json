@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "allOf": [
+        { "$ref": "world_objects.json#" },
+        {
+          "properties": {
+            "weight": {
+              "type": [ "string", "number" ]
+            },
+            "volume": {
+              "type": [ "string", "number" ]
+            },
+            "material": {
+              "type": "array",
+              "minItems": 1
+            },
+            "price": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "to_hit": {
+              "type": "integer"
+            },
+            "looks_like": {
+              "type": "string"
+            },
+            "ammo": {
+              "type": "string"
+            },
+            "sub": {
+              "type": "string"
+            },
+            "charges_per_use": {
+              "type": "integer"
+            },
+            "qualities": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": [
+                  { "type": "string" },
+                  { "type": "integer", "minimum": 1 }
+                ],
+                "additionalItems": false,
+                "minItems": 2
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
