@@ -153,6 +153,6 @@
     "time": "60 m",
     "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "CHEM", "level": 3 } ],
     "tools": [ [ [ "tongs", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ], [ [ "surface_heat", 1, "LIST" ] ], [ [ "forge", 5 ] ] ],
-    "components": [ [ [ "silver", 3 ] ], [ [ "nitric_acid", 2 ] ], [ [ "salt", 1 ] ], [ [ "cable", 1 ] ], [ [ "plastic_chunk", 1 ] ], [ [ "chem_potassium_chloride", 1 ] ], [ [ "glass_shard", 1 ] ] ]
+    "components": [ [ [ "silver_small", 3 ] ], [ [ "nitric_acid", 2 ] ], [ [ "salt", 1 ] ], [ [ "cable", 1 ] ], [ [ "plastic_chunk", 1 ] ], [ [ "chem_potassium_chloride", 1 ] ], [ [ "glass_shard", 1 ] ] ]
   }
 ]
