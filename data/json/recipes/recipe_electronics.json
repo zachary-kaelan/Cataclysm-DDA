@@ -2467,5 +2467,44 @@
       [ [ "water_clean", 25 ] ],
       [ [ "steel_chunk", 25 ], [ "scrap", 50 ] ]
     ]
+  },
+  {
+    "type": "recipe",
+    "result": "voltmeter",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_TOOLS",
+    "skill_used": "electronics",
+    "difficulty": 3,
+    "reversible": false,
+    "decomp_learn": 2,
+    "book_learn": [
+      [ "manual_electronics", 1 ],
+      [ "radio_book", 1 ],
+      [ "textbook_electronics", 2 ]
+    ],
+    "auto_learn":  true,
+    "time": "1 h",
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "scrap", 2 ] ],
+      [ [ "amplifier", 1 ] ],
+      [ [ "cable", 6 ] ],
+      [ [ "plastic_chunk", 4 ] ],
+      [ [ "e_scrap", 3 ] ]
+    ]
+  },
+  {
+    "type":  "recipe",
+    "result": "ph_meter",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_TOOLS",
+    "skill_used": "electronics",
+    "skills_required": [ "cooking", 3 ],
+    "difficulty": 3,
+    "decomp_learn":  2,
+    "reversible": false,
+    "time": "5 m",
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [ [ [ "voltmeter", 1 ] ], [ [ "glass_tube_small", 2 ] ] ]
   }
 ]
