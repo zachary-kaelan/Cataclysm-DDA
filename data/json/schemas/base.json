@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "base",
+  "type": "object",
+  "properties": {
+    "type": { "type": "string", "description": "The type of object this json entry is describing." },
+    "copy-from": { "type": "string", "description": "The identifier of the item you wish to copy properties from." },
+    "extend": { "type": "object", "description": "Append entries to a list instead of overriding the entire list." },
+    "delete": { "type": "object", "description": "Removes elements from lists instead of overriding the entire list." }
+  },
+  "required": [ "type" ],
+  "anyOf": [
+    { "properties": { "id": { "type": "string", "pattern": "^[a-z_]+$" } } },
+    { "properties": { "abstract": { "type": "string", "pattern": "^[a-z_]+$" } } }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "allOf": [
+    { "$ref": "world_objects.json#" },
+    {
+      "properties": {
+        "category": {
+          "$ref": "prop_enums.json#/definitions/categories"
+        },
+        "weight": {
+          "type": [ "string", "number" ],
+          "description": "Weight of the item in grams."
+        },
+        "volume": {
+          "type": [ "string", "number" ],
+          "description": "Volume, volume in ml and L can be used - \"50 ml\" or \"2 L\"."
+        },
+        "material": {
+          "oneOf": [
+            {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "prop_enums.json#/definitions/materials"  
+              },
+              "description": "Material types, can be as many as you want."
+            },
+            {
+              "$ref": "prop_enums.json#/definitions/materials",
+              "description": "Material types, can be as many as you want."
+            }
+          ]
+        },
+        "price": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "to_hit": {
+          "type": "integer"
+        },
+        "bashing": {
+          "type": "integer"
+        },
+        "cutting": {
+          "type": "integer"
+        },
+        "looks_like": {
+          "type": "string"
+        },
+        "ammo": {
+          "type": "string"
+        },
+        "sub": {
+          "type": "string"
+        },
+        "charges_per_use": {
+          "type": "integer"
+        },
+        "qualities": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": [
+              { "type": "string" },
+              { "type": "integer", "minimum": 1 }
+            ],
+            "additionalItems": false,
+            "minItems": 2
+          }
+        },
+        "container": {
+          "type": "string"
+        }
+      }
+    }
+  ]
+}

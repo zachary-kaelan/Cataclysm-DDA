@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "world_objects", 
+  "allOf": [
+    { "$ref": "base.json#" },
+    {
+      "properties": {
+        "name": { "type": "string", "description": "The name appearing in the examine box." },
+        "description": { "type": "string" },
+        "symbol": { "type": "string", "minLength": 1, "maxLength": 1, "description": "Object symbol as it appears on the map." },
+        "color": {
+          "$ref": "prop_enums.json#/definitions/colors",
+          "description": "Color of the object symbol."
+        },
+        "flags": { 
+          "type": "array",
+          "items": {
+            "$ref": "prop_enums.json#/definitions/flags",
+            "description": "Indicates special effects."
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "name",
+        "description",
+        "symbol",
+        "color"
+      ]
+    }
+  ]
+  
+}

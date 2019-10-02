@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "definitions": {
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "items.json#"
+      },
+      "minItems": 1
+    }
+  }
+}
