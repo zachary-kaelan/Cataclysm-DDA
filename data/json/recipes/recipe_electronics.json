@@ -2501,6 +2501,7 @@
     "skills_required": [ "cooking", 3 ],
     "difficulty": 3,
     "decomp_learn":  2,
+    "book_learn": [ [ "textbook_electronics", 3 ] ],
     "time": "5 m",
     "qualities": [ { "id": "SCREW", "level": 1 } ],
     "components": [ [ [ "voltmeter", 1 ] ], [ [ "glass_tube_small", 2 ] ] ]
