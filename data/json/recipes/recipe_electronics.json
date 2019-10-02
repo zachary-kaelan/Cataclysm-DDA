@@ -2475,7 +2475,6 @@
     "subcategory": "CSC_ELECTRONIC_TOOLS",
     "skill_used": "electronics",
     "difficulty": 3,
-    "reversible": false,
     "decomp_learn": 2,
     "book_learn": [
       [ "manual_electronics", 1 ],
@@ -2502,7 +2501,6 @@
     "skills_required": [ "cooking", 3 ],
     "difficulty": 3,
     "decomp_learn":  2,
-    "reversible": false,
     "time": "5 m",
     "qualities": [ { "id": "SCREW", "level": 1 } ],
     "components": [ [ [ "voltmeter", 1 ] ], [ [ "glass_tube_small", 2 ] ] ]
