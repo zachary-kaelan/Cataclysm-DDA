@@ -137,22 +137,31 @@
     "components": [ [ [ "lead", 25 ] ], [ [ "tin", 25 ] ], [ [ "rosin", 2 ] ] ]
   },
   {
-    "type":  "recipe",
+    "type": "recipe",
     "result": "glass_tube_small",
     "category": "CC_ELECTRONIC",
     "subcategory": "CSC_ELECTRONIC_PARTS",
     "skill_used": "cooking",
     "skills_required": [ "electronics", 5 ],
     "difficulty": 5,
-    "book_learn": [
-      [ "recipe_labchem", 5 ],
-      [ "textbook_chemistry", 3 ], 
-      [ "textbook_fabrication", 4 ]
-    ],
+    "book_learn": [ [ "recipe_labchem", 5 ], [ "textbook_chemistry", 3 ], [ "textbook_fabrication", 4 ] ],
     "using": [ [ "surface_heat", 10 ], [ "soldering_standard", 5 ] ],
     "time": "60 m",
     "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "CHEM", "level": 3 } ],
-    "tools": [ [ [ "tongs", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ], [ [ "surface_heat", 1, "LIST" ] ], [ [ "forge", 5 ] ] ],
-    "components": [ [ [ "silver_small", 3 ] ], [ [ "chem_nitric_acid", 2 ] ], [ [ "salt", 1 ] ], [ [ "cable", 1 ] ], [ [ "plastic_chunk", 1 ] ], [ [ "chem_potassium_chloride", 1 ] ], [ [ "glass_shard", 1 ] ] ]
+    "tools": [
+      [ [ "tongs", -1 ] ],
+      [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ],
+      [ [ "surface_heat", 1, "LIST" ] ],
+      [ [ "forge", 5 ] ]
+    ],
+    "components": [
+      [ [ "silver_small", 3 ] ],
+      [ [ "chem_nitric_acid", 2 ] ],
+      [ [ "salt", 1 ] ],
+      [ [ "cable", 1 ] ],
+      [ [ "plastic_chunk", 1 ] ],
+      [ [ "chem_potassium_chloride", 1 ] ],
+      [ [ "glass_shard", 1 ] ]
+    ]
   }
 ]
