@@ -231,7 +231,7 @@
           "foot_sole_r"
         ],
         "encumbrance": 14,
-        "coverage": 95
+        "coverage": 100
       },
       { "coverage": 75, "covers": [ "foot_l", "foot_r" ], "specifically_covers": [ "foot_ankle_l", "foot_ankle_r" ] }
     ],
