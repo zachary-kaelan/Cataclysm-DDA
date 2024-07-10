@@ -293,5 +293,34 @@
     "flags": [ "UNMOUNT_ON_DAMAGE", "PROTRUSION", "CARGO_PASSABLE" ],
     "damage_reduction": { "all": 10 },
     "variants": [ { "symbols": "o", "symbols_broken": "#" } ]
+  },
+  {
+    "type": "vehicle_part",
+    "id": "cargo_rack_extended",
+    "name": { "str": "cargo shelving" },
+    "looks_like": "f_utility_shelf",
+    "categories": [ "cargo" ],
+    "color": "light_gray",
+    "broken_color": "dark_gray",
+    "durability": 150,
+    "size": "2000 L",
+    "item": "vehicle_shelving",
+    "location": "center",
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 1 ] ], "time": "180 m", "using": [ [ "welding_standard", 480 ], [ "vehicle_bolt_install", 8 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "90 m", "using": [ [ "vehicle_weld_removal", 1 ], [ "vehicle_wrench_2", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 2 ] ], "time": "120 m", "using": [ [ "repair_welding_standard", 32 ] ] }
+    },
+    "flags": [ "OPAQUE", "OBSTACLE", "CARGO", "COVERED", "LOCKABLE_CARGO", "NO_ROOF_NEEDED" ],
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 24, 38 ] },
+      { "item": "steel_chunk", "count": [ 14, 24 ] },
+      { "item": "scrap", "charges": [ 28, 50 ] },
+      { "item": "rope_6", "count": [ 2, 4 ] },
+      { "item": "string_36", "count": [ 20, 50 ] },
+      { "item": "string_6", "count": [ 30, 56 ] }
+    ],
+    "damage_reduction": { "all": 28 },
+    "variants": [ { "symbols": "=", "symbols_broken": "#" } ]
   }
 ]
