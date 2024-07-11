@@ -510,6 +510,7 @@
     "price": "0 cent",
     "price_postapoc": "5 cent",
     "fun": -15,
+    "extend": { "vitamins": [ "filth_toxin", 25 ] },
     "flags": [ "TRADER_AVOID", "SMOKABLE", "BAD_TASTE", "RAW" ],
     "smoking_result": "meat_mutant_tainted_smoked"
   },
@@ -765,7 +766,8 @@
     "spoils_in": "4 hours",
     "use_action": [ "POISON" ],
     "price_postapoc": "0 cent",
-    "fun": -25
+    "fun": -25,
+    "extend": { "vitamins": [ "filth_toxin", 25 ] }
   },
   {
     "id": "mutant_bug_organs",
@@ -1470,7 +1472,7 @@
     "fun": -10,
     "flags": [ "TRADER_AVOID", "SMOKABLE", "NUTRIENT_OVERRIDE", "RAW" ],
     "smoking_result": "dry_meat_tainted",
-    "vitamins": [ [ "meat_allergen", 1 ] ]
+    "vitamins": [ [ "meat_allergen", 1 ], [ "filth_toxin", 25 ] ]
   },
   {
     "type": "COMESTIBLE",
@@ -1488,7 +1490,7 @@
     "use_action": [ "POISON" ],
     "calories": 278,
     "fun": -20,
-    "vitamins": [ [ "meat_allergen", 1 ] ],
+    "vitamins": [ [ "meat_allergen", 1 ], [ "filth_toxin", 40 ] ],
     "spoils_in": "2 days",
     "price": "0 cent",
     "price_postapoc": "0 cent",
@@ -1510,7 +1512,7 @@
     "use_action": [ "POISON" ],
     "calories": 399,
     "fun": -20,
-    "vitamins": [ [ "meat_allergen", 1 ] ],
+    "vitamins": [ [ "meat_allergen", 1 ], [ "filth_toxin", 40 ] ],
     "spoils_in": "2 days",
     "price": "0 cent",
     "price_postapoc": "0 cent",
@@ -1551,7 +1553,7 @@
     "volume": "50 ml",
     "fun": -10,
     "flags": [ "TRADER_AVOID", "RAW" ],
-    "vitamins": [ [ "meat_allergen", 1 ] ]
+    "vitamins": [ [ "meat_allergen", 1 ], [ "filth_toxin", 15 ] ]
   },
   {
     "type": "COMESTIBLE",
@@ -1573,7 +1575,7 @@
     "volume": "250 ml",
     "fun": -10,
     "flags": [ "RAW" ],
-    "vitamins": [ [ "meat_allergen", 1 ] ]
+    "vitamins": [ [ "meat_allergen", 1 ], [ "filth_toxin", 5 ] ]
   },
   {
     "type": "COMESTIBLE",
@@ -1594,7 +1596,7 @@
     "material": [ "flesh" ],
     "volume": "62 ml",
     "fun": -18,
-    "vitamins": [ [ "meat_allergen", 1 ] ]
+    "vitamins": [ [ "meat_allergen", 1 ], [ "filth_toxin", 5 ] ]
   },
   {
     "type": "COMESTIBLE",
@@ -1672,7 +1674,8 @@
     "use_action": [ "POISON" ],
     "price_postapoc": "10 cent",
     "description": "A carefully folded poisonous raw skin harvested from an unnatural creature.  You can cure it for storage and tanning.",
-    "price": "0 cent"
+    "price": "0 cent",
+    "extend": { "vitamins": [ "filth_toxin", 20 ] }
   },
   {
     "type": "COMESTIBLE",
@@ -1686,7 +1689,8 @@
     "use_action": [ "POISON" ],
     "price_postapoc": "0 cent",
     "description": "Shredded scraps of raw skin from an unnatural creature.  It can't have much use.",
-    "price": "0 cent"
+    "price": "0 cent",
+    "extend": { "vitamins": [ "filth_toxin", 1 ] }
   },
   {
     "type": "COMESTIBLE",
@@ -1736,7 +1740,8 @@
     "spoils_in": "6 hours",
     "use_action": [ "POISON" ],
     "description": "A carefully folded raw skin harvested from a fur-bearing unnatural creature.  It still has the fur attached and is poisonous.  You can cure it for storage and tanning.",
-    "price": "0 cent"
+    "price": "0 cent",
+    "extend": { "vitamins": [ "filth_toxin", 20 ] }
   },
   {
     "type": "COMESTIBLE",
