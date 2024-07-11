@@ -84,6 +84,17 @@
     "disease_excess": [ [ 10, 216 ] ]
   },
   {
+    "id": "filth_toxin",
+    "type": "vitamin",
+    "vit_type": "toxin",
+    "name": { "str": "Filth" },
+    "excess": "filth_buildup",
+    "min": 0,
+    "max": 1800,
+    "rate": "15 m",
+    "disease_excess": [ [ 500, 949 ], [ 950, 1399 ], [ 1400, 1800 ] ]
+  },
+  {
     "id": "mutant_toxin",
     "type": "vitamin",
     "vit_type": "toxin",
