@@ -4716,7 +4716,7 @@
     "prereqs": [ "EATPOISON" ],
     "threshreq": [ "THRESH_CHIMERA", "THRESH_RAT", "THRESH_CRUSTACEAN" ],
     "cancels": [ "VEGETARIAN", "HERBIVORE", "RUMINANT", "GRAZER" ],
-    "vitamins_absorb_multi": [ [ "all", [ [ "mutant_toxin", 0.25 ] ] ] ],
+    "vitamins_absorb_multi": [ [ "all", [ [ "mutant_toxin", 0.25 ], [ "filth_toxin", 0.25 ] ] ] ],
     "category": [ "RAT", "CHIMERA", "CRUSTACEAN" ],
     "flags": [ "IMMUNE_SPOIL" ]
   },
