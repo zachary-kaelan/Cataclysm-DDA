@@ -51,7 +51,7 @@
     "price_postapoc": "5 cent",
     "milling": { "into": "meal_bone_tainted", "recipe": "meal_bone_tainted_mill_1_4" },
     "fun": -10,
-    "extend": { "flags": [ "NO_SALVAGE" ] },
+    "extend": { "flags": [ "NO_SALVAGE" ], "vitamins": [ "filth_toxin", 5 ] },
     "//": "Not for use in edible recipes, and should require ~200% as much as normal for applicable inedible recipes except for charcoal."
   },
   {
@@ -97,7 +97,8 @@
     "use_action": [ "POISON" ],
     "description": "This is a grayish bone meal made from rotten bones.",
     "price": "0 cent",
-    "price_postapoc": "1 cent"
+    "price_postapoc": "1 cent",
+    "extend": { "vitamins": [ "filth_toxin", 1 ] }
   },
   {
     "type": "GENERIC",
