@@ -83,6 +83,19 @@
   },
   {
     "type": "ITEM",
+    "id": "tempered_glass_piece",
+    "symbol": ".",
+    "color": "light_cyan",
+    "name": { "str": "tempered glass piece" },
+    "category": "other",
+    "description": "A broken piece of tempered glass. Blunt, and safe to step on.",
+    "material": [ "glass" ],
+    "weight": "75 g",
+    "volume": "30 ml",
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "type": "ITEM",
     "id": "tempered_glass_sheet",
     "symbol": "]",
     "color": "light_cyan",
