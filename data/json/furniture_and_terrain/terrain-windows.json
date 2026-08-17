@@ -4552,7 +4552,7 @@
       "items": [
         { "item": "stick", "count": 1 },
         { "item": "nail", "charges": [ 3, 4 ] },
-        { "item": "glass_shard", "count": [ 68, 100 ] }
+        { "item": "tempered_glass_piece", "count": [ 68, 100 ] }
       ]
     }
   },
@@ -4603,7 +4603,7 @@
       "items": [
         { "item": "stick", "count": 1 },
         { "item": "nail", "charges": [ 3, 4 ] },
-        { "item": "glass_shard", "count": [ 68, 100 ] }
+        { "item": "tempered_glass_piece", "count": [ 68, 100 ] }
       ]
     }
   },
@@ -4654,7 +4654,7 @@
       "sound_vol": 16,
       "sound_fail_vol": 10,
       "ter_set": "t_window_frame",
-      "items": [ { "item": "glass_shard", "count": [ 68, 100 ] } ]
+      "items": [ { "item": "tempered_glass_piece", "count": [ 68, 100 ] } ]
     }
   },
   {
@@ -4706,7 +4706,7 @@
       "sound_vol": 16,
       "sound_fail_vol": 10,
       "ter_set": "t_window_frame",
-      "items": [ { "item": "glass_shard", "count": [ 68, 100 ] } ]
+      "items": [ { "item": "tempered_glass_piece", "count": [ 68, 100 ] } ]
     }
   },
   {
@@ -4759,7 +4759,7 @@
       "sound_vol": 16,
       "sound_fail_vol": 10,
       "ter_set": "t_window_frame",
-      "items": [ { "item": "glass_shard", "count": [ 68, 100 ] } ]
+      "items": [ { "item": "tempered_glass_piece", "count": [ 68, 100 ] } ]
     }
   },
   {
